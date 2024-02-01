@@ -1,0 +1,14 @@
+C:\dotnet\StarkeyWeek1TicketingSystem\bin\Debug\net6.0\StarkeyWeek1TicketingSystem.exe
+C:\dotnet\StarkeyWeek1TicketingSystem\bin\Debug\net6.0\StarkeyWeek1TicketingSystem.deps.json
+C:\dotnet\StarkeyWeek1TicketingSystem\bin\Debug\net6.0\StarkeyWeek1TicketingSystem.runtimeconfig.json
+C:\dotnet\StarkeyWeek1TicketingSystem\bin\Debug\net6.0\StarkeyWeek1TicketingSystem.dll
+C:\dotnet\StarkeyWeek1TicketingSystem\bin\Debug\net6.0\StarkeyWeek1TicketingSystem.pdb
+C:\dotnet\StarkeyWeek1TicketingSystem\obj\Debug\net6.0\StarkeyWeek1TicketingSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotnet\StarkeyWeek1TicketingSystem\obj\Debug\net6.0\StarkeyWeek1TicketingSystem.AssemblyInfoInputs.cache
+C:\dotnet\StarkeyWeek1TicketingSystem\obj\Debug\net6.0\StarkeyWeek1TicketingSystem.AssemblyInfo.cs
+C:\dotnet\StarkeyWeek1TicketingSystem\obj\Debug\net6.0\StarkeyWeek1TicketingSystem.csproj.CoreCompileInputs.cache
+C:\dotnet\StarkeyWeek1TicketingSystem\obj\Debug\net6.0\StarkeyWeek1TicketingSystem.dll
+C:\dotnet\StarkeyWeek1TicketingSystem\obj\Debug\net6.0\refint\StarkeyWeek1TicketingSystem.dll
+C:\dotnet\StarkeyWeek1TicketingSystem\obj\Debug\net6.0\StarkeyWeek1TicketingSystem.pdb
+C:\dotnet\StarkeyWeek1TicketingSystem\obj\Debug\net6.0\StarkeyWeek1TicketingSystem.genruntimeconfig.cache
+C:\dotnet\StarkeyWeek1TicketingSystem\obj\Debug\net6.0\ref\StarkeyWeek1TicketingSystem.dll
