@@ -23,6 +23,28 @@ class Ticket
         Assigned = assigned;
         Watching = watching;
     }
+
+    public static List<Ticket> ReadTicketsFromFile(string filename) {
+        List<Ticket> tickets = new List<Ticket>();
+        if (File.Exists(filename)) {
+            using (StreamReader sr = new StreamReader(filename)) {
+                while (!sr.EndOfStream) {
+                    string line = sr.ReadLine();
+                    string[] arr = line.Split('|');
+                    tickets.Add(new Ticket(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5], arr[6]));
+                }
+            }
+        }
+        return tickets;
+    }
+
+    public static void WriteTicketsToFile(string filename, List<Ticket> tickets) {
+        using (StreamWriter sw = new StreamWriter(filename, append: true)) {
+            foreach (Ticket ticket in tickets) {
+                sw.WriteLine($"{ticket.ID}|{ticket.Summary}|{ticket.Status}|{ticket.Priority}|{ticket.Submitter}|{ticket.Assigned}|{ticket.Watching}");
+            }
+        }
+    }
 }
 class Program
 {
