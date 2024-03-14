@@ -1,7 +1,30 @@
 ﻿//Build data file with initial system tickets and data in a CSV
 //Write console application to process and add records to the CSV file
 
-string file = "ticketData.txt";
+
+
+class Ticket {
+    public string ID { get; set; }
+    public string Summary { get; set; }
+    public string Status { get; set; }
+    public string Priority { get; set; }
+    public string Submitter { get; set; }
+    public string Assigned { get; set; }
+    public string Watching { get; set; }
+
+    public Ticket(string id, string summary, string status, string priority, string submitter, string assigned, string watching) {
+        ID = id;
+        Summary = summary;
+        Status = status;
+        Priority = priority;
+        Submitter = submitter;
+        Assigned = assigned;
+        Watching = watching;
+    }
+}
+class Program {
+    static void Main(string[] args) {
+        string file = "ticketData.txt";
 string? choice;
 
 do {
@@ -82,3 +105,5 @@ do {
     }
 
 } while (choice == "1" || choice == "2");
+    }
+}

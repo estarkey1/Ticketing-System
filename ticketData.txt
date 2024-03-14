@@ -1,3 +1,5 @@
 3|d|d|d|d|d|d
 1|a|a|a|a|a|a
 1032|A good ticket|Valid|1|john|john|john
+12|gh|ada|dwqe|gd|csd|ef
+3|q|w|e|r|t|y
