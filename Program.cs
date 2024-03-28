@@ -68,7 +68,7 @@
 }
 class Program {
     static void Main(string[] args) {
-        string file = "ticketData.txt";
+        string ticketFile = "Tickets.csv";
         string choice;
 
         do {
@@ -78,7 +78,7 @@ class Program {
             choice = Console.ReadLine();
 
             if (choice == "1") {
-                List<Ticket> tickets = Ticket.ReadTicketsFromFile(file);
+                List<Ticket> tickets = Ticket.ReadTicketsFromFile(ticketFile);
                 foreach (Ticket ticket in tickets) {
                     Console.WriteLine($"{ticket.ID}|{ticket.Summary}|{ticket.Status}|{ticket.Priority}|{ticket.Submitter}|{ticket.Assigned}|{ticket.Watching}");
                 }
@@ -93,7 +93,7 @@ class Program {
                     response = Console.ReadLine();
                 } while (response == "Y");
 
-                Ticket.WriteTicketsToFile(file, tickets);
+                Ticket.WriteTicketsToFile(ticketFile, tickets);
             }
         } while (choice == "1" || choice == "2");
     }
