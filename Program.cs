@@ -199,14 +199,13 @@ class Program
             {
                 string line = sr.ReadLine();
                 string[] arr = line.Split('|');
-                if (arr.Length == 11) // Ensure array has correct length
+                if (arr.Length == 11)
                 {
                     enhancements.Add(new Enhancement(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5], arr[6], arr[7], arr[8], arr[9], arr[10]));
                 }
                 else
                 {
                     Console.WriteLine($"Error: Invalid data format in file {filename}");
-                    // You can choose to handle or log this error as appropriate
                 }
             }
         }
@@ -271,14 +270,13 @@ class Program
             {
                 string line = sr.ReadLine();
                 string[] arr = line.Split('|');
-                if (arr.Length == 9) // Ensure array has correct length
+                if (arr.Length == 9)
                 {
                     tasks.Add(new Task(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5], arr[6], arr[7], arr[8]));
                 }
                 else
                 {
                     Console.WriteLine($"Error: Invalid data format in file {filename}");
-                    // You can choose to handle or log this error as appropriate
                 }
             }
         }
