@@ -66,9 +66,40 @@
         return new Ticket(id, summary, status, priority, submitter, assigned, watching);
     }
 }
+
+class Enhancement : Ticket
+{
+    public string Software { get; set; }
+    public string Cost { get; set; }
+    public string Reason { get; set; }
+    public string Estimate { get; set; }
+
+    public Enhancement(string id, string summary, string status, string priority, string submitter, string assigned, string watching, string software, string cost, string reason, string estimate)
+        : base(id, summary, status, priority, submitter, assigned, watching)
+    {
+        Software = software;
+        Cost = cost;
+        Reason = reason;
+        Estimate = estimate;
+    }
+}
+
+class Task : Ticket
+{
+    public string ProjectName { get; set; }
+    public string DueDate { get; set; }
+
+    public Task(string id, string summary, string status, string priority, string submitter, string assigned, string watching, string projectName, string dueDate)
+        : base(id, summary, status, priority, submitter, assigned, watching)
+    {
+        ProjectName = projectName;
+        DueDate = dueDate;
+    }
+}
 class Program {
     static void Main(string[] args) {
         string ticketFile = "Tickets.csv";
+        string enhancementFile = "Enhancements.csv";
         string choice;
 
         do {
